@@ -206,7 +206,6 @@ ul {
   transition: background-color 0.3s ease;
 }
 
-/* === DARK MODE === */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
@@ -214,10 +213,14 @@ body.dark-mode {
 }
 
 body.dark-mode .section,
-body.dark-mode .alt-bg,
 body.dark-mode .light-bg {
   background-color: transparent;
   color: inherit;
+}
+
+body.dark-mode .alt-bg {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
 }
 
 body.dark-mode .card,
