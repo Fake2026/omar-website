@@ -203,6 +203,7 @@ ul {
   background: #f7f9fc;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  transition: background-color 0.3s ease;
 }
 
 /* === DARK MODE === */
@@ -215,8 +216,8 @@ body.dark-mode {
 body.dark-mode .section,
 body.dark-mode .alt-bg,
 body.dark-mode .light-bg {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+  background-color: transparent;
+  color: inherit;
 }
 
 body.dark-mode .card,
@@ -224,7 +225,7 @@ body.dark-mode .blog-card,
 body.dark-mode .skill-card {
   background-color: #2a2a2a;
   color: #ffffff;
-  border: 1px solid #333;
+  border: 1px solid #444;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
