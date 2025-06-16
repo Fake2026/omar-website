@@ -22,3 +22,25 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
     });
 });
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    form.reset();
+    status.innerText = "✅ Thanks for your message! I’ll get back to you shortly.";
+  } else {
+    status.innerText = "❌ Oops! Something went wrong. Please try again.";
+  }
+});
