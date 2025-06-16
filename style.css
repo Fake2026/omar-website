@@ -203,3 +203,56 @@ ul {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .section,
+body.dark-mode .alt-bg,
+body.dark-mode .light-bg {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card,
+body.dark-mode .blog-card,
+body.dark-mode .skill-card {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #444;
+}
+
+body.dark-mode .contact-footer {
+  background-color: #111;
+  color: #ccc;
+}
+
+body.dark-mode nav a {
+  color: #ddd;
+}
+
+body.dark-mode nav a:hover {
+  color: #8ab4f8;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
